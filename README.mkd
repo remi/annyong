@@ -10,5 +10,5 @@ Annyong starts a public static Web server in the current directory, allowing peo
 
 ## Options
 
-    * `--port [PORT] - the port to use (default: 9292)`
-    * `--host [HOST] - the host to listen on (default: 0.0.0.0)`
+* `--port [PORT]` → the port to use (default: 9292)
+* `--host [HOST]` → the host to listen on (default: 0.0.0.0)
