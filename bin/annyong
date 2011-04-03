@@ -20,7 +20,7 @@ Options:
     options[:port] = port
   end
 
-  opts.on("--host [HOST]", "The port to use (default: 0.0.0.0)") do |host|
+  opts.on("--host [HOST]", "The host to listen on (default: 0.0.0.0)") do |host|
     options[:host] = host
   end
 

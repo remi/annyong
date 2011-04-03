@@ -2,8 +2,13 @@
 
 Annyong starts a public static Web server in the current directory, allowing people in your local network to browse and download your files.
 
-# Usage
+## Usage
 
     $ gem install annyong
     $ cd /path/you/want/to/serve
     $ annyong
+
+## Options
+
+    * `--port [PORT] - the port to use (default: 9292)`
+    * `--host [HOST] - the host to listen on (default: 0.0.0.0)`
