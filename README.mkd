@@ -1,0 +1,9 @@
+# Introduction
+
+Annyong starts a public static Web server in the current directory, allowing people in your local network to browse and download your files.
+
+# Usage
+
+    $ gem install annyong
+    $ cd /path/you/want/to/serve
+    $ annyong

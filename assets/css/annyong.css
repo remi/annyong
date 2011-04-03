@@ -1,0 +1,37 @@
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-family: Helvetica, Arial, sans-serif;
+  font-size: 140%;
+  padding: 30px;
+}
+
+hr {
+  display: none;
+}
+
+table {
+  border-collapse: collapse;
+  font-size: 100%;
+  background: #fff;
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+table td, table th {
+  border: 1px solid #aaa;
+  padding: 6px 8px;
+}
+
+table th {
+  background: #eee;
+}
+
+table tr:hover {
+  background: rgba(255,255,0,0.1);
+}
+
+table td.name {
+  font-family: monospace;
+}
