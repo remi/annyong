@@ -2,6 +2,8 @@
 
 Annyong starts a public static Web server in the current directory, allowing people in your local network to browse and download your files.
 
+![Screenshot of Annyong in action](http://i.imgur.com/zRg9Y.png)
+
 ## Usage
 
     $ gem install annyong
