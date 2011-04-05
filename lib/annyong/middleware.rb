@@ -20,7 +20,7 @@ module Annyong
 
       response_body = ""
       response.each { |part| response_body += part }
-      response_body = inject(response_body)
+      response_body = inject(response_body) unless env['REQUEST_PATH'] =~ /\.html$/
 
       headers["Content-Length"] = response_body.length.to_s
 
