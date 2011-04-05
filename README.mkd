@@ -17,4 +17,4 @@ Annyong starts a public static Web server in the current directory, allowing peo
 
 ## Thanks
 
-* Doug McInnes (to prevent injecting annyong’s code into public HTML files)
+* [Doug McInnes](https://github.com/dmcinnes) (to prevent injecting annyong’s code into public HTML files)
