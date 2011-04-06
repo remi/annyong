@@ -1,3 +1,9 @@
+table { width:100%; }
+.name { text-align:left; }
+.size, .mtime { text-align:right; }
+.type { width:11em; }
+.mtime { width:15em; }
+
 /* Basic # {{{ */
 
 * {

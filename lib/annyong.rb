@@ -1,6 +1,6 @@
 module Annyong
-  VERSION = '0.1.2'
-  autoload :Middleware, "annyong/middleware"
+  VERSION = '0.2'
+  autoload :Directory, "annyong/directory"
 end
 
 unless "".respond_to?(:each)
