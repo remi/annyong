@@ -3,7 +3,8 @@
 $:.unshift File.join(File.dirname(__FILE__), *%w[.. lib])
 
 require "rubygems"
-require 'optparse'
+require "fileutils"
+require "optparse"
 require "rack"
 require "annyong"
 
