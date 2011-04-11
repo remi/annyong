@@ -1,5 +1,5 @@
 module Annyong
-  VERSION = '0.2'
+  VERSION = '0.3'
   autoload :Directory, "annyong/directory"
 end
 
