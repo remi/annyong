@@ -42,14 +42,13 @@ module Annyong
       }
 
       option_parser = OptionParser.new do |opts|
-        opts.banner = "Usage: annyong [options]
+        opts.banner = "Usage: annyong [options]"
+        opts.separator ""
+        opts.separator "Options:"
 
-Options:
-        "
         opts.on("--port [PORT]", "The port to use (default: #{options[:port]})") do |port|
           options[:port] = port
         end
-
         opts.on("--host [HOST]", "The host to listen on (default: #{options[:host]})") do |host|
           options[:host] = host
         end
