@@ -4,6 +4,19 @@ module Annyong
 
   class Application
 
+    def server
+      @server ||= Rack::Server.new({
+        :config      => File.join(File.dirname(__FILE__), "../../assets/rack/config.ru"),
+        :Port        => port,
+        :Host        => host,
+        :AccessLog   => [],
+      })
+    end
+
+    def run
+      server.start
+    end
+
     def port
       options[:port]
     end

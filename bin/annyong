@@ -9,10 +9,4 @@ require "rack"
 require "annyong"
 
 application = Annyong::Application.new(ARGV)
-
-Rack::Server.start({
-  :config      => File.join(File.dirname(__FILE__), "../assets/rack/config.ru"),
-  :Port        => application.port,
-  :Host        => application.host,
-  :AccessLog   => [],
-})
+application.run
