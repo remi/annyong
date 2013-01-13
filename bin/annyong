@@ -8,33 +8,5 @@ require "optparse"
 require "rack"
 require "annyong"
 
-options = {
-  :port => 9292,
-  :host => "0.0.0.0"
-}
-opts = OptionParser.new do |opts|
-  opts.banner = "Usage: annyong [options]
-
-Options:
-  "
-  opts.on("--port [PORT]", "The port to use (default: 9292)") do |port|
-    options[:port] = port
-  end
-
-  opts.on("--host [HOST]", "The host to listen on (default: 0.0.0.0)") do |host|
-    options[:host] = host
-  end
-
-  #opts.on("--path [PATH]", "The directory to serve") do |path|
-    #options[:path] = path
-  #end
-
-end
-opts.parse!
-
-Rack::Server.start({
-  :config      => File.join(File.dirname(__FILE__), "../assets/rack/config.ru"),
-  :Port        => options[:port],
-  :Host        => options[:host],
-  :AccessLog   => [],
-})
+application = Annyong::Application.new(ARGV)
+application.run

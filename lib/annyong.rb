@@ -1,6 +1,7 @@
 module Annyong
   VERSION = '0.3'
   autoload :Directory, "annyong/directory"
+  require "annyong/application"
 end
 
 unless "".respond_to?(:each)
