@@ -20,7 +20,7 @@ module Annyong
   </tr>
 %s
 </table>
-<footer><code>#{FileUtils.pwd.chomp}</code>, <a target='_blank' title='Powered by annyong' href='https://github.com/remiprev/annyong'>annyong</a>!</footer></body
+<footer><code>#{FileUtils.pwd.chomp}</code>, <a target='_blank' title='Powered by annyong' href='https://github.com/remiprev/annyong'>annyong</a>!</footer>
 </body></html>
     PAGE
 
