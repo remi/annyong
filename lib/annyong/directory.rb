@@ -26,11 +26,26 @@ module Annyong
     PAGE
 
     def each
-      show_path = @path.sub(/^#{@root}/,'')
-      files = @files.map{|f| DIR_FILE % f }*"\n"
-      page  = DIR_PAGE % [ show_path, show_path , files ]
-      page.each_line{|l| yield l }
+      page = DIR_PAGE % [html_title, page_title, files]
+      page.each_line { |content| yield content }
     end
 
+  private
+
+    def html_title
+      path = @path.sub(/^#{@root}/,'').gsub(/\/$/, '')
+      File.basename(FileUtils.pwd) + path
+    end
+
+    def page_title
+      parts = html_title.split('/')
+      parts.each_with_index.map do |item, index|
+        "<a href='#{'../' * (parts.length - index - 1)}'>#{item}</a>"
+      end.join(' / ')
+    end
+
+    def files
+      @files.map { |file| DIR_FILE % file } * "\n"
+    end
   end
 end
