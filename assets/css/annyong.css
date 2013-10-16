@@ -4,7 +4,9 @@ table { width:100%; }
 .type { width:11em; }
 .mtime { width:15em; }
 
-/* Basic # {{{ */
+/*===============================================================
+ Basic
+ ===============================================================*/
 
 * {
   padding: 0;
@@ -37,9 +39,9 @@ h1 {
   font-size: 150%;
 }
 
-/* }}} */
-
-/* Tables # {{{ */
+/*===============================================================
+ Tables
+ ===============================================================*/
 
 table {
   border-collapse: collapse;
@@ -71,6 +73,15 @@ table th {
   color: #888;
 }
 
+table td.name {
+  padding: 0;
+}
+
+table td.name a {
+  display: block;
+  padding: 6px 8px;
+}
+
 table tr:hover {
   background: rgba(255,255,0,0.1);
 }
@@ -78,9 +89,9 @@ table tr:hover {
 table td.name {
 }
 
-/* }}} */
-
-/* Footer # {{{ */
+/*===============================================================
+ Footer
+ ===============================================================*/
 
 footer {
   padding: 16px 2px 6px;
@@ -93,4 +104,21 @@ footer a {
   color: #aaa;
 }
 
-/* }}} */
+/*===============================================================
+ Mobile
+ ===============================================================*/
+
+@media only screen and (max-width : 520px) {
+  body {
+    padding: 15px;
+    font-size: 165%;
+  }
+
+  table td.name a {
+    padding: 10px 12px;
+  }
+
+  table td.type, table th.type, table td.size, table th.size, table td.mtime, table th.mtime {
+    display: none;
+  }
+}

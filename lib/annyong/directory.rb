@@ -6,6 +6,7 @@ module Annyong
 <html><head>
   <title>%s</title>
   <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+  <meta name="viewport" content="width=device-width" />
   <style type="text/css">
   #{File.read(File.join(File.dirname(__FILE__), "../../assets/css/annyong.css")).gsub(/%/, "%%")}
   </style>
