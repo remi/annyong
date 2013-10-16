@@ -32,6 +32,8 @@ Options:
 end
 opts.parse!
 
+STDOUT.puts "Now serving files in #{FileUtils.pwd.chomp} on http://#{options[:host]}:#{options[:port]}. Annyong!"
+
 Rack::Server.start({
   :config      => File.join(File.dirname(__FILE__), "../assets/rack/config.ru"),
   :Port        => options[:port],
